@@ -1,4 +1,4 @@
-# Sundial-LAI-Benchmark
+# sundial-lai
 
 A comprehensive benchmark for evaluating [Sundial](https://github.com/thuml/Sundial), a family of highly capable time series foundation models, on Leaf Area Index (LAI) forecasting tasks using the HiQ LAI archive.
 
@@ -96,7 +96,7 @@ This script evaluates combinations of:
 ## Project Structure
 
 ```
-Sundial-LAI-Benchmark/
+sundial-lai/
 ├── README.md                          # This file
 ├── time_series_prediction_sundial_batch.py  # Main evaluation script
 ├── run_sundial_batch_loop.sh          # Batch evaluation script
