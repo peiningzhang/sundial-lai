@@ -26,7 +26,15 @@ To configure the dataset path, set the environment variable:
 export DL4VEG_NC_FILE="/path/to/your/HiQ_LAI_regrid_to_gridMET_all.nc"
 ```
 
-Alternatively, you can pass the dataset path directly as a parameter to the scripts.
+**Test the dataset loading:**
+
+You can test if your dataset path is configured correctly by running:
+
+```bash
+python load_all_data.py
+```
+
+This will load the dataset and print basic information about it (time range, spatial coverage, etc.). If the file is not found, you'll get a clear error message with the path it tried to use.
 
 ## Features
 
@@ -39,7 +47,29 @@ Alternatively, you can pass the dataset path directly as a parameter to the scri
 
 ## Installation
 
-### Requirements
+### Option 1: Using Conda (Recommended)
+
+If you have conda installed, you can create the environment from the provided `environment.yml`:
+
+```bash
+# Create conda environment from file
+conda env create -f environment.yml
+
+# Activate the environment
+conda activate dl4veg
+```
+
+Or if you already have a conda environment (e.g., `dl4veg`), activate it and install dependencies:
+
+```bash
+# Activate your existing conda environment
+conda activate dl4veg
+
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
+```
+
+### Option 2: Using pip only
 
 Install all dependencies using pip:
 
@@ -73,7 +103,15 @@ The models will be automatically downloaded from HuggingFace on first use.
 
 ## Quick Start
 
-### 1. Configure Dataset Path
+### 1. Activate Environment
+
+If using conda:
+
+```bash
+conda activate dl4veg
+```
+
+### 2. Configure Dataset Path
 
 First, set the environment variable for your dataset:
 
@@ -81,7 +119,7 @@ First, set the environment variable for your dataset:
 export DL4VEG_NC_FILE="/path/to/your/HiQ_LAI_regrid_to_gridMET_all.nc"
 ```
 
-### 2. Zero-shot Evaluation
+### 3. Zero-shot Evaluation
 
 Evaluate Sundial on a single location:
 
@@ -105,7 +143,7 @@ python time_series_prediction_sundial_batch.py \
     --sundial-num-samples 20
 ```
 
-### 3. Baseline Comparisons
+### 4. Baseline Comparisons
 
 Run LSTM baseline:
 
@@ -167,7 +205,8 @@ sundial-lai/
 ├── README.md                          # This file
 ├── LICENSE                            # Apache License 2.0
 ├── .gitignore                         # Git ignore rules
-├── requirements.txt                   # Python dependencies
+├── requirements.txt                   # Python dependencies (pip)
+├── environment.yml                    # Conda environment file (optional)
 │
 ├── Core Model Scripts                 # Core model evaluation scripts
 │   ├── time_series_prediction_sundial_batch.py      # Sundial zero-shot evaluation
