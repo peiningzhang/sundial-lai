@@ -234,7 +234,7 @@ sundial-lai/
 - **`time_series_prediction_lstm.py`**: LSTM baseline model with training and evaluation capabilities
 - **`time_series_prediction_baseline_batch.py`**: Simple baseline methods including:
   - **Mean/Last/Trend**: Simple statistical methods (mean of window, last value, linear trend)
-  - **ARIMA/SARIMA**: Traditional time series models (ARIMA and Seasonal ARIMA)
+  - **ARIMA**: Traditional time series models (ARIMA)
 
 ## Evaluation Metrics
 
@@ -251,16 +251,7 @@ For multi-location evaluation, metrics are reported as mean ± standard deviatio
 
 ## Citation
 
-If you use this benchmark in your research, please cite:
-
-```bibtex
-@article{liu2025sundial,
-  title={Sundial: A Family of Highly Capable Time Series Foundation Models},
-  author={Liu, Zhijian and others},
-  journal={ICML 2025},
-  year={2025}
-}
-```
+Coming soon.
 
 ## References
 
