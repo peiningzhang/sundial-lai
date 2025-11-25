@@ -1,0 +1,72 @@
+# Dataset files - 数据集文件
+*.nc
+*.h5
+*.hdf5
+HiQ_LAI_regrid_to_gridMET/
+**/HiQ_LAI_regrid_to_gridMET/
+nc_files.txt
+all_files.txt
+
+# Model checkpoints and saved models - 模型检查点和保存的模型
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.hdf5
+
+# Generated figures and plots - 生成的图片和图表
+*.png
+*.jpg
+*.jpeg
+*.pdf
+figures/
+*.json
+
+# Log files - 日志文件
+*.log
+*.out
+*.err
+
+# Python cache - Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments - 虚拟环境
+venv/
+env/
+ENV/
+.venv
+
+# IDE files - IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files - 操作系统文件
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints - Jupyter Notebook 检查点
+.ipynb_checkpoints/
+
+# Distribution / packaging - 分发/打包
+dist/
+build/
+*.egg-info/
+
+# Testing - 测试
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files - 临时文件
+*.tmp
+*.temp
+*.bak
+
