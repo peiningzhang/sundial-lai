@@ -217,7 +217,7 @@ sundial-lai/
 │   ├── load_all_data.py              # Main data loading functions
 │   └── util.py                       # Helper functions (metrics, location selection, etc.)
 │
-├── Visualization                      # Visualization scripts
+├── plots/                             # Visualization scripts
 │   ├── plot_ground_truth.py           # Plot ground truth data
 │   ├── plot_spatial_distribution.py   # Plot spatial distributions
 │   ├── plot_window_size_effect.py    # Analyze window size effects
@@ -273,16 +273,16 @@ Generate visualizations of results:
 
 ```bash
 # Plot ground truth data
-python plot_ground_truth.py
+python plots/plot_ground_truth.py
 
 # Analyze window size effects
-python plot_window_size_effect.py
+python plots/plot_window_size_effect.py
 
 # Analyze forecast length effects
-python plot_forecast_length_effect.py
+python plots/plot_forecast_length_effect.py
 
 # Plot spatial distributions
-python plot_spatial_distribution.py
+python plots/plot_spatial_distribution.py
 ```
 
 ## License
